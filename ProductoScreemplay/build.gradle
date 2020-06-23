@@ -1,0 +1,43 @@
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.4")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:1.9.8'
+    implementation 'net.serenity-bdd:serenity-junit:1.9.8'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.5'
+    implementation 'net.serenity-bdd:serenity-screenplay:1.9.8'
+
+    implementation 'net.sf.jacob-project:jacob:1.14.3'
+
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.assertj:assertj-core:3.9.1'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.7'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version:'3.17'
+    compile group: 'org.apache.poi', name: 'poi', version:'3.17'
+    compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
+    compile group: 'net.sf.jt400', name: 'jt400', version: '9.7'
+    compile group: 'net.sf.jt400', name: 'jt400-jdk8', version: '9.7'
+}
+
+
+
+
+gradle.startParameter.continueOnFailure = true

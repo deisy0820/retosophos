@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="feature.feature" skipped="0" tests="1" time="0.78" timestamp="2020-06-23 12:52:44"><testcase classname="feature.feature" name="Service response"><error message="net/serenitybdd/markers/IsSilent" type="java.lang.NoClassDefFoundError">net/serenitybdd/markers/IsSilent</error><system-err>net/serenitybdd/markers/IsSilent&#13;
+steps.ServicesStep.theUserReadARegisterInUserApiAndHasTheAnswer(ServicesStep.java:19)&#13;
+feature.feature.serviceResponse(feature.java:20)&#13;
+</system-err></testcase></testsuite>
